@@ -55,9 +55,10 @@ def check(numbers, winning_numbers):
     return award
 
 
-lottery = draw_winning_numbers()
-user_lottery = generate_numbers()
-print(lottery)
-print(user_lottery)
-print(count_matching_numbers(user_lottery, lottery))
-print("%d 원" % check(user_lottery, lottery))
+lottery_num = draw_winning_numbers()
+user_num = generate_numbers()
+print(lottery_num)
+print(user_num)
+print(count_matching_numbers(user_num, lottery_num))
+print("%d 원" % check(user_num, lottery_num))
+
