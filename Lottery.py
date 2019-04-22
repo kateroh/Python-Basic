@@ -34,6 +34,16 @@ def count_matching_numbers(list1, list2):
             count_num += 1
     return count_num
 
+# # 두 리스트에서 중복되는 숫자가 몇개인지 구하기
+# def count_matching_numbers(numbers, winning_numbers):
+#     count = 0
+#
+#     for num in numbers:
+#         # num이 winning_numbers에 있으면 count에 1 추가
+#         if num in winning_numbers:
+#             count = count + 1
+#
+#     return count
 
 # 로또 등수 확인하기
 def check(numbers, winning_numbers):
@@ -54,6 +64,27 @@ def check(numbers, winning_numbers):
         award = 0
     return award
 
+# # 로또 등수 확인하기
+# def check(numbers, winning_numbers):
+#     # 번호 당첨 개수 확인
+#     count = count_matching_numbers(numbers, winning_numbers[:6])
+#
+#     # 보너스 당첨 확인
+#     bonus_count = count_matching_numbers(numbers, winning_numbers[6:])
+#
+#     # 상금 확인
+#     if count == 6:
+#         return 1000000000
+#     elif count == 5 and bonus_count == 1:
+#         return 50000000
+#     elif count == 5:
+#         return 1000000
+#     elif count == 4:
+#         return 50000
+#     elif count == 3:
+#         return 5000
+#     else:
+#         return 0
 
 lottery_num = draw_winning_numbers()
 user_num = generate_numbers()
